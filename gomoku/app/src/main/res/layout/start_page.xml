@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wood_back"
+    android:layout_alignParentLeft="true"
+    android:layout_gravity="center_vertical|center_horizontal">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp"
+        android:id="@+id/imageView"
+        android:src="@drawable/gomoku" />
+
+    <Button
+        android:text="Enter Game "
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonEnterGame"
+        android:layout_marginLeft="90dp"
+        android:width="200dp"
+        android:height="70dp"
+        android:backgroundTint="@color/darkwood"
+        android:textColor="@android:color/white"
+        android:textStyle="normal|bold"
+        android:fontFamily="casual"
+        android:textSize="18sp"
+        tools:typeface="normal" />
+
+    <Button
+        android:text="How to Play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonHowToPlay"
+        android:layout_marginLeft="90dp"
+        android:width="200dp"
+        android:height="70dp"
+        android:backgroundTint="@color/darkwood"
+        android:textColor="@android:color/white"
+        android:textStyle="normal|bold"
+        android:fontFamily="casual"
+        android:textSize="18sp" />
+    <Button
+        android:text="Developer:&#xA;JiaLu     Yubin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="90dp"
+        android:width="200dp"
+        android:height="70dp"
+        android:background="@color/darkwood"
+        android:textColor="@android:color/white"
+        android:textStyle="normal|bold"
+        android:fontFamily="casual"
+        android:textSize="15sp"
+        android:gravity="center"/>
+
+
+    
+</LinearLayout>
+
+

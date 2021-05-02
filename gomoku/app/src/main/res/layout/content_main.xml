@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wood_back">
+
+    <LinearLayout
+        android:id="@+id/linMenu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="160dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="15dp"
+                android:fontFamily="casual"
+                android:text="New Game"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:gravity="center"
+                android:backgroundTint="@color/darkwood"
+                android:textColor="@android:color/white"
+                android:id="@+id/btnPlay"/>
+            <TextView
+                android:layout_width="160dp"
+                android:layout_height="80dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="15dp"
+                android:fontFamily="casual"
+                android:text="Winner Record:&#xA;"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:gravity="center"
+                android:background="@color/darkwood"
+                android:textColor="@android:color/white"
+                android:id="@+id/record"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_weight="3"
+                android:text="Turn of"
+                android:padding="10dp"
+                android:textSize="20sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="click newgame to play"
+                android:padding="10dp"
+                android:id="@+id/tvTurn"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_weight="1"
+                android:text="Timer 1"
+                android:padding="10dp"
+                android:textSize="20sp"
+                android:textStyle="normal"
+                android:id="@+id/timerText1"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+
+                android:layout_weight="1"
+                android:text="Timer 2"
+                android:padding="10dp"
+                android:textSize="20sp"
+                android:textStyle="normal"
+                android:id="@+id/timerText2"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/linBoardGame"
+        android:orientation="vertical"
+        android:layout_below="@id/linMenu">
+    </LinearLayout>
+
+
+</RelativeLayout>
+

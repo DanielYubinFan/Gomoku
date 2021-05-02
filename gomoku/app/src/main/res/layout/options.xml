@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wood_back"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="10dp"
+        android:inputType="textPersonName"
+        android:text="I WANT TO PLAY WITH:"
+        android:ems="10"
+        android:id="@+id/editText1"
+        android:layout_weight="1"
+        android:fontFamily="casual"
+        android:textSize="18sp"/>
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RadioButton
+            android:text="Robot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="130dp"
+            android:onClick="onPlayWithClicked"
+            android:id="@+id/radioButtonRobot"
+            android:layout_weight="1"
+            android:fontFamily="casual"
+            android:textSize="18sp"
+            />
+        <RadioButton
+            android:text="A Friend Right Here"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="130dp"
+            android:onClick="onPlayWithClicked"
+            android:id="@+id/radioButtonOffline"
+            android:layout_weight="1"
+            android:fontFamily="casual"
+            android:textSize="18sp"/>
+        <RadioButton
+            android:text="A Friend Online"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="130dp"
+            android:onClick="onPlayWithClicked"
+            android:id="@+id/radioButtonOnline"
+            android:layout_weight="1"
+            android:fontFamily="casual"
+            android:textSize="18sp"/>
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="10dp"
+        android:inputType="textPersonName"
+        android:text="LET'S PLAY IN:"
+        android:ems="10"
+        android:id="@+id/editText2"
+        android:layout_weight="1"
+        android:fontFamily="casual"
+        android:textSize="18sp"/>
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RadioButton
+            android:text="Standard Style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="130dp"
+            android:onClick="onPlayInClicked"
+            android:id="@+id/radioButtonStandard"
+            android:layout_weight="1"
+            android:fontFamily="casual"
+            android:textSize="18sp"/>
+        <RadioButton
+            android:text="Free Style"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="130dp"
+            android:onClick="onPlayInClicked"
+            android:id="@+id/radioButtonFree"
+            android:layout_weight="1"
+            android:fontFamily="casual"
+            android:textSize="18sp"/>
+    </RadioGroup>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="10dp"
+        android:inputType="textPersonName"
+        android:text="BOARD SIZE:"
+        android:ems="10"
+        android:id="@+id/editText3"
+        android:layout_weight="1"
+        android:fontFamily="casual"
+        android:textSize="18sp"/>
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <RadioButton
+            android:text="10 x 10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="130dp"
+            android:onClick="onBoardSizeClicked"
+
+            android:id="@+id/radioButton10x10"
+            android:layout_weight="1"
+            android:fontFamily="casual"
+            android:textSize="18sp"/>
+
+        <RadioButton
+            android:text="15 x 15"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="130dp"
+            android:onClick="onBoardSizeClicked"
+
+            android:id="@+id/radioButton15x15"
+            android:layout_weight="1"
+            android:fontFamily="casual"
+            android:textSize="18sp"/>
+        <RadioButton
+            android:text="20 x 20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="130dp"
+            android:onClick="onBoardSizeClicked"
+
+            android:id="@+id/radioButton20x20"
+            android:layout_weight="1"
+            android:fontFamily="casual"
+            android:textSize="18sp"/>
+    </RadioGroup>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:text="Back"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="20dp"
+            android:id="@+id/buttonBack"
+            android:layout_weight="0.3"
+            android:fontFamily="casual"
+            android:textSize="18sp"
+            android:backgroundTint="@color/darkwood"
+            android:textColor="@android:color/white"
+            android:textStyle="normal|bold" />
+
+        <Button
+            android:text="Next"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/buttonNext"
+            android:layout_weight="0.3"
+            android:fontFamily="casual"
+            android:textSize="18sp"
+            android:backgroundTint="@color/darkwood"
+            android:textColor="@android:color/white"
+            android:textStyle="normal|bold" />
+
+    </LinearLayout>
+
+</LinearLayout>
